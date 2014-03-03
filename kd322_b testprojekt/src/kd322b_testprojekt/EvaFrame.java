@@ -1,3 +1,5 @@
+package kd322b_testprojekt;
+
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
@@ -5,8 +7,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-
-public class JFrame extends JFrame {
+public class EvaFrame extends JFrame {
 
 	private JPanel contentPane;
 
@@ -17,7 +18,7 @@ public class JFrame extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					JFrame frame = new JFrame();
+					EvaFrame frame = new EvaFrame();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -29,7 +30,7 @@ public class JFrame extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public JFrame() {
+	public EvaFrame() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
